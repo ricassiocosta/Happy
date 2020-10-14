@@ -2,7 +2,6 @@ import React from "react"
 import { Link } from "react-router-dom"
 import { FiArrowRight, FiPlus } from "react-icons/fi"
 import { Map, Marker, Popup, TileLayer } from "react-leaflet"
-import "leaflet/dist/leaflet.css"
 
 import mapMarkerImg from "../images/Local.svg"
 

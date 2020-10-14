@@ -1,6 +1,5 @@
 import React from "react"
 import { Map, Marker, TileLayer } from "react-leaflet"
-import L from "leaflet"
 
 import { FiPlus } from "react-icons/fi"
 
