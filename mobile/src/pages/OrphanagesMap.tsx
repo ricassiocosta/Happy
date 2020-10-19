@@ -36,6 +36,10 @@ const OrphanagesMap = () => {
     navigation.navigate("OrphanageDetails")
   }
 
+  function handleNavigateToCreateOrphanage() {
+    navigation.navigate("SelectMapPosition")
+  }
+
   return (
     <SafeAreaView style={styles.container}>
       <StatusBar barStyle="light-content" backgroundColor="#0089a5" />
@@ -72,7 +76,7 @@ const OrphanagesMap = () => {
         <Text style={styles.footerText}>2 Orfanatos encontrado</Text>
         <TouchableOpacity
           style={styles.createOrphanageButton}
-          onPress={() => {}}
+          onPress={handleNavigateToCreateOrphanage}
         >
           <Feather name="plus" size={20} color="#fff" />
         </TouchableOpacity>
