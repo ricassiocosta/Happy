@@ -15,7 +15,7 @@ import {
   Nunito_700Bold,
   Nunito_800ExtraBold,
 } from "@expo-google-fonts/nunito"
-import { useNavigation } from "@react-navigation/native"
+import { useNavigation, useFocusEffect } from "@react-navigation/native"
 import { RectButton } from "react-native-gesture-handler"
 
 import mapMarker from "../images/map-marker.png"
@@ -31,11 +31,11 @@ interface Orphanage {
 const OrphanagesMap = () => {
   const [orphanages, setOrphanages] = useState<Orphanage[]>([])
 
-  useEffect(() => {
+  useFocusEffect(() => {
     api.get("orphanages").then((response) => {
       setOrphanages(response.data)
     })
-  }, [])
+  })
 
   const navigation = useNavigation()
   const [fontsLoaded] = useFonts({
