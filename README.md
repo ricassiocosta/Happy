@@ -1,4 +1,4 @@
-![Happy](https://drive.google.com/uc?export=view&id=1Ibh5DaxmvYFxp_8VrdWvzi-cdB3rBBCQ)
+![Happy](./.github/happy.gif)
 
 # Happy
 
